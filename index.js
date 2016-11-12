@@ -12,7 +12,7 @@ function malta_rename(o, options) {
   			if (err) throw err;
   			var old = o.name + '';
   			o.name = dir + '/' +  options.to;
-  			msg = 'plugin ' + path.basename(__filename) + ' renamed ' + old + ' to ' + o.name;
+  			msg = 'plugin ' + path.basename(path.dirname(__filename)).white() + ' renamed ' + old + ' to ' + o.name;
   			solve(o);
   			self.notifyAndUnlock(start, msg);
 		});
