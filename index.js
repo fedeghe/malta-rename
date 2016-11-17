@@ -6,16 +6,12 @@ function malta_rename(o, options) {
 	var self = this,
 		start = new Date(),
 		msg,
-		pluginName = path.basename(path.dirname(__filename)),
-		doErr = function (e) {
-			console.log(('[ERROR on ' + o.name + ' using ' + pluginName + '] :').red());
-			console.dir(e);
-			self.stop();
-		};
+		pluginName = path.basename(path.dirname(__filename));
+
 	return function (solve, reject){
 		var dir = path.dirname(o.name);
 		fs.rename(o.name, dir + '/' +  options.to, function (err) {
-  			err && doErr(err);
+  			err && self.doErr(err, o, pluginName);
   			var old = o.name + '';
   			o.name = dir + '/' +  options.to;
   			msg = 'plugin ' + pluginName.white() + ' renamed ' + old + ' to ' + o.name;
