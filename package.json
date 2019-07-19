@@ -1,27 +1,27 @@
 {
-  "name": "malta-rename",
-  "version": "1.0.4",
-  "description": "Malta plugin to rename a file",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://fedeghe@github.com/fedeghe/malta-rename.git"
-  },
-  "keywords": [
-    "malta",
-    "malta plugin",
-    "malta rename",
-    "malta rename plugin"
-  ],
-  "author": "Federico Ghedina <federico.ghedina@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fedeghe/malta-rename/issues"
-  },
-  "dependencies": {
-    "malta": ">=3.8.14"
-  },
-  "main": "./index.js"
+    "name": "malta-rename",
+    "version": "1.0.4",
+    "description": "Malta plugin to rename a file",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://fedeghe@github.com/fedeghe/malta-rename.git"
+    },
+    "keywords": [
+        "malta",
+        "malta plugin",
+        "malta rename",
+        "malta rename plugin"
+    ],
+    "author": "Federico Ghedina <fedeghe@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/fedeghe/malta-rename/issues"
+    },
+    "dependencies": {
+        "malta": ">=3.8.14"
+    },
+    "main": "./index.js"
 }
