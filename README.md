@@ -1,6 +1,5 @@
 ---
 [![npm version](https://badge.fury.io/js/malta-rename.svg)](http://badge.fury.io/js/malta-rename)
-[![Dependencies](https://david-dm.org/fedeghe/malta-rename.svg)](https://david-dm.org/fedeghe/malta-rename)
 [![npm downloads](https://img.shields.io/npm/dt/malta-rename.svg)](https://npmjs.org/package/malta-rename)
 [![npm downloads](https://img.shields.io/npm/dm/malta-rename.svg)](https://npmjs.org/package/malta-rename)  
 ---  

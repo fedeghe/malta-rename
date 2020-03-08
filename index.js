@@ -1,16 +1,16 @@
-var path = require('path'),
+const path = require('path'),
 	fs = require('fs');
 
 function malta_rename(o, options) {
-	
-	var self = this,
+	const self = this,
 		start = new Date(),
-		msg,
-		pluginName = path.basename(path.dirname(__filename));
+        pluginName = path.basename(path.dirname(__filename));
+    
+    let msg;
 
 	return function (solve, reject){
 		var dir = path.dirname(o.name);
-		fs.rename(o.name, dir + '/' +  options.to, function (err) {
+		fs.rename(o.name, dir + '/' +  options.to, err => {
   			err && self.doErr(err, o, pluginName);
   			var old = o.name + '';
   			o.name = dir + '/' +  options.to;
@@ -22,5 +22,4 @@ function malta_rename(o, options) {
 		});
 	};
 }
-// malta_rename.ext = ['*'];
 module.exports = malta_rename;
